@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!--导入bootstrap-->
+     <link rel='stylesheet' href='/stylesheets/boostrap/css/bootstrap.min.css' />
+  </head>
+  <body>
+  	<!--导航栏-->
+	  <div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+			
+				<!--设定导航菜单中的类容 将浏览器中的数据居中显示-->
+				<div class="container">
+					<!--通过brand 来设定显示的标记 Logo -->
+					<a class="brand" href="#">Yellowcong</a>
+					<ul class="nav">
+						<!--active 设定选中显示效果-->
+						<li class="active"><a href="#">首页</a></li>
+						<li><a href="#">项目一</a></li>
+						<li><a href="#">项目二</a></li>
+					</ul>
+					<!--设定导航的搜索-->
+					<form class="navbar-search">
+						<input type="text" class="search-query" />
+					</form>
+					<!--
+					pull-right 设定数据显示在右边
+					pull-left 设定数据显示在左边
+					-->
+					<ul class="nav pull-right">
+						<li ><a href="#">登录</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="#">注册</a></li>
+					</ul>		
+				</div>
+			</div>	
+		</div>
+  
+  	<div class="container">
+	    <h1 class='page-header'><%= title %></h1>
+	    <p>Welcome to <%= title %></p>
+  	</div>
+  </body>
+</html>
